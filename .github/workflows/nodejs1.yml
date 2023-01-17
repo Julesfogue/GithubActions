@@ -15,8 +15,6 @@ jobs:
       run: |
         echo "Tis is a test string"    
         echo "Tis is a test string 1"      
-    - name: Install
-      run: apt install git -y
     - name: multiline script
       run: |
         npm test
