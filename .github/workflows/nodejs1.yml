@@ -13,15 +13,14 @@ jobs:
     steps:    
     - name: Echo somes strings
       run: |
-        echo "Tis is a test string"    
-        echo "Tis is a test string 1"      
+        echo "This is a test string"    
+        echo "This is a test string 1"      
     - name: multiline script
-      run: |
-        npm test
+      run: |        
         node -v
         npm -v
-        date
-        cal
-        pwd
-        cat /etc/*release
+        
+        
+        
+      
       
