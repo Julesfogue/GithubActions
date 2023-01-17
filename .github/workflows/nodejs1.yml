@@ -10,7 +10,8 @@ jobs:
   run-shell-command:
     name: Running Basics commands
     runs-on: ubuntu-latest
-    steps:    
+    steps: 
+    - uses: actions/checkout@v1
     - name: Echo somes strings
       run: |
         echo "This is a test string"    
