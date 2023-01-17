@@ -7,17 +7,16 @@ on:
       - main
       
 jobs:
-  test:
-    name: Running Units Tests
+  run-shell-command:
+    name: Running Basics commands
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+    steps:    
+    - name: Echo somes strings
+      run: |
+        echo "Tis is a test string"    
+        echo "Tis is a test string 1"      
     - name: Install
-      run: npm install
+      run: apt install git -y
     - name: multiline script
       run: |
         npm test
