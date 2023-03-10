@@ -17,6 +17,7 @@ jobs:
         echo "This is a test string"    
         echo "This is a test string 1" 
         echo "$(date)"
+        pwd
     - name: multiline script
       run: |        
         node -v
