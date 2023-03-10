@@ -15,7 +15,8 @@ jobs:
     - name: Echo somes strings
       run: |
         echo "This is a test string"    
-        echo "This is a test string 1"      
+        echo "This is a test string 1" 
+        echo "$(date)"
     - name: multiline script
       run: |        
         node -v
